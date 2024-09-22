@@ -2,14 +2,19 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../assets/logo.jpg";
+import github from "../../assets/Footer-icons/github.png";
+import instagram from "../../assets/Footer-icons/instagram.png";
+import linkedin from "../../assets/Footer-icons/linkedin.png";
+import mail from "../../assets/Footer-icons/mail.png";
+import discord from "../../assets/Footer-icons/discord.png";
 
 const Footer = () => {
   const socialLinks = [
-    { name: "Github", href: "https://github.com/daccotta-org/daccotta" },
-    { name: "LinkedIn", href: "https://www.linkedin.com/company/daccotta" },
-    { name: "Discord", href: "#" },
-    { name: "Instagram", href: "#" },
-    { name: "E-Mail", href: "#" },
+    { name: "Github", href: "https://github.com/daccotta-org/daccotta", icon: github },
+    { name: "LinkedIn", href: "https://www.linkedin.com/company/daccotta", icon: linkedin },
+    { name: "Discord", href: "#", icon: discord },
+    { name: "Instagram", href: "#", icon: instagram },
+    { name: "E-Mail", href: "#", icon: mail },
   ];
 
   return (
@@ -35,9 +40,10 @@ const Footer = () => {
             <Link
               key={link.name}
               href={link.href}
+              target="_blank"
               className="flex items-center text-gray-400 hover:text-gray-200 mb-2 last:mb-0"
             >
-              <div className="w-5 h-5 bg-gray-200 mr-2"></div>
+              <Image src={link.icon} width={16} height={16} alt={link.name} className="mr-2" />
               {link.name}
             </Link>
           ))}
