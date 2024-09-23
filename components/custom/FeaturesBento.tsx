@@ -29,8 +29,8 @@ const Skeleton = () => (
 );
 const items = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
+    title: "List Creation",
+    description: "Create and manage your own movie lists.",
     header: (
       <Image
         src={favmovie}
@@ -42,8 +42,8 @@ const items = [
 
 
   {
-    title: "The Digital Revolution",
-    description: "Dive into the transformative power of technology.",
+    title: "Movie Journals",
+    description: "Keep a personalized journal entry for every movie you watch.",
     header: (
         <Image
           src={journal}
@@ -55,8 +55,8 @@ const items = [
 
 
   {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
+    title: "User Stats",
+    description: "Get insights into your movie-watching habits.",
     header: (
         <Image
           src={friends}
@@ -68,9 +68,9 @@ const items = [
 
 
   {
-    title: "The Power of Communication",
+    title: "Your Favorites, Your Way",
     description:
-      "Understand the impact of effective communication in our lives.",
+      "Effortlessly curate and showcase your top movie picks in a sleek, customizable list that reflects your taste.",
     header: (
         <Image
           src={topmovies}
@@ -82,8 +82,8 @@ const items = [
 
 
   {
-    title: "The Pursuit of Knowledge",
-    description: "Join the quest for understanding and enlightenment.",
+    title: "Personalized reccomendations",
+    description: "Get personalized reccomendations based on your movie watching habits.",
     header: (
         <Image
           src={watchfriends}

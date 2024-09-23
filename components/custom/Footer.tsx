@@ -12,13 +12,13 @@ const Footer = () => {
   const socialLinks = [
     { name: "Github", href: "https://github.com/daccotta-org/daccotta", icon: github },
     { name: "LinkedIn", href: "https://www.linkedin.com/company/daccotta", icon: linkedin },
-    { name: "Discord", href: "#", icon: discord },
-    { name: "Instagram", href: "#", icon: instagram },
-    { name: "E-Mail", href: "#", icon: mail },
+    { name: "Discord", href: "https://discord.com/", icon: discord },
+    { name: "Instagram", href: "https://www.instagram.com/", icon: instagram },
+    { name: "E-Mail", href: "https://temp-mail.org/en/", icon: mail },
   ];
 
   return (
-    <footer className="bg-[#0d0c0d] pt-6 md:py-6 px-4 md:px-8">
+    <footer className="bg-[#0d0c0d] pt-6 md:py-6 px-4 md:px-8" id="footer-contact">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
         <div className="text-sm text-gray-400 mb-4 md:mb-0 order-3 md:order-1 w-full md:w-auto text-center md:text-left">
           © Daccotta. All Rights Reserved.
