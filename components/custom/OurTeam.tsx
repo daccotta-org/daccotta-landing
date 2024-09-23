@@ -1,14 +1,34 @@
+// import BlurIn from "../magicui/blur-in";
+// import { Carousel } from "../ui/apple-cards-carousel";
+// import TeamCards from "./TeamMembersCard";
+
+// export function OurTeam() {
+//   return (
+//     <div className="text-gray-100 py-8 px-4 mx-8">
+//       <h2 className="text-center text-5xl font-bold text-purple-300 mb-8">
+//         <BlurIn word="Our Team" />
+//       </h2>
+
+//       {/* <TeamCards /> */}
+//       <Carousel      
+//       />
+//     </div>
+//   );
+// }
+
+import React from "react";
 import BlurIn from "../magicui/blur-in";
-import TeamCards from "./TeamMembersCard";
+import TeamCarousel from "./TeamMembersCard";
 
 export function OurTeam() {
   return (
-    <div className="text-gray-100 py-8 px-4 mx-8">
-      <h2 className="text-center text-5xl font-bold text-purple-300 mb-8">
-        <BlurIn word="Our Team" />
-      </h2>
-
-      <TeamCards />
+    <div className="bg-gray-900 text-gray-100 py-16 px-4">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-center text-5xl font-bold text-purple-300 ">
+          <BlurIn word="Our Team" />
+        </h2>
+        <TeamCarousel />
+      </div>
     </div>
   );
 }
