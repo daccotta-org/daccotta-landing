@@ -24,6 +24,9 @@ const Navbar: React.FC = () => {
     <a href="/features" className="text-white hover:text-gray-300">
       Features
     </a>
+    <a href="/features" className="text-white hover:text-gray-300">
+      Contact
+    </a>
   </div>
 </nav>
   );
