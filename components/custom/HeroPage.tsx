@@ -18,7 +18,7 @@ export function BeamDesignBg() {
   }, []);
 
   const Content = () => (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 md:my-24 my-0">
       <div className="flex flex-col md:flex-row gap-8 items-center justify-center">
         {/* Left Column */}
         <div className="w-full md:w-1/2 flex flex-col justify-center">

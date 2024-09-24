@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
   }
 
   return (
-    <nav className="relative flex items-center justify-between px-4 py-3 lg:px-12 bg-[#0d0c0d]">
+    <nav className="relative flex items-center justify-between px-4 py-3 lg:px-12">
       <div className="flex items-center">
         <Image
           src={logo}

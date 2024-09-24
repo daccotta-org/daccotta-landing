@@ -1,9 +1,9 @@
 import Image from "next/image";
-import journal from "../../assets/journal.png";
-import friends from "../../assets/friends.png";
-import favmovie from "../../assets/fav-movie.png";
-import watchfriends from "../../assets/watch-friends.png";
-import topmovies from "../../assets/top-movies.png";
+import journal from "../../assets/Features/journal.png";
+import listcreation from "../../assets/Features/List_creation.png";
+import profile from "../../assets/Features/profile.png";
+import reccomend from "../../assets/Features/reccomend.png";
+import topmovies from "../../assets/Features/top-movies.png";
 
 import React from "react";
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
@@ -33,7 +33,7 @@ const items = [
     description: "Create and manage your own movie lists.",
     header: (
       <Image
-        src={favmovie}
+        src={listcreation}
         alt=""
         className=""
       />
@@ -59,7 +59,7 @@ const items = [
     description: "Get insights into your movie-watching habits.",
     header: (
         <Image
-          src={friends}
+          src={profile}
           alt=""
           className=""
         />
@@ -86,7 +86,7 @@ const items = [
     description: "Get personalized reccomendations based on your movie watching habits.",
     header: (
         <Image
-          src={watchfriends}
+          src={reccomend}
           alt=""
           className=""
         />

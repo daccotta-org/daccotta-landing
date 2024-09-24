@@ -4,7 +4,7 @@ import BlurIn from "../magicui/blur-in";
 
 export default function AboutDaccotta() {
   return (
-    <div className=" container text-gray-100 py-8 px-0 sm:px-8 [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]" id="about">
+    <div className=" container text-gray-100 py-8 md:mb-24 mb-0 px-0 sm:px-8 [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]" id="about">
       <h2 className="text-center text-4xl md:text-5xl font-bold text-purple-300 mb-14">
         <BlurIn word="About Daccotta" />
       </h2>
