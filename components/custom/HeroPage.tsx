@@ -19,7 +19,7 @@ export function BeamDesignBg() {
 
   const Content = () => (
     <div className="container mx-auto px-4 py-8">
-      <div className="flex flex-col md:flex-row gap-8 items-center">
+      <div className="flex flex-col md:flex-row gap-8 items-center justify-center">
         {/* Left Column */}
         <div className="w-full md:w-1/2 flex flex-col justify-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-purple-300 text-left mb-4">
@@ -60,11 +60,14 @@ export function BeamDesignBg() {
   );
 
   return showBeams ? (
-    <BackgroundBeamsWithCollision>
+    // <BackgroundBeamsWithCollision>
+    //   <Content />
+    // </BackgroundBeamsWithCollision>
+    <div className="container bg-gradient-to-b flex  justify-center items-center">
       <Content />
-    </BackgroundBeamsWithCollision>
+    </div>
   ) : (
-    <div className="bg-gradient-to-b from-neutral-950 to-neutral-800 h-[70vh]">
+    <div className="container bg-gradient-to-b flex  justify-center items-center">
       <Content />
     </div>
   );
