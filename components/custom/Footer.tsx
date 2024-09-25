@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../assets/logo.jpg";
@@ -21,10 +22,21 @@ const Footer = () => {
       icon: linkedin,
     },
     { name: "Discord", href: "https://discord.com/", icon: discord },
-    { name: "Instagram", href: "https://www.instagram.com/", icon: instagram },
-    { name: "E-Mail", href: "https://temp-mail.org/en/", icon: mail },
+    // { name: "Instagram", href: "https://www.instagram.com/", icon: instagram },
+    // { name: "E-Mail", href: "https://temp-mail.org/en/", icon: mail },
   ];
+  useEffect(() => {
+    // Load GitHub buttons script
+    const script = document.createElement("script");
+    script.src = "https://buttons.github.io/buttons.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
 
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
     <footer
       className="bg-[#0d0c0d] pt-6 md:py-6 px-4 md:px-8"
@@ -66,6 +78,18 @@ const Footer = () => {
               {link.name}
             </Link>
           ))}
+        </div>
+        <div className="mt-2">
+          <a
+            className="github-button"
+            href="https://github.com/daccotta-org/daccotta"
+            data-icon="octicon-star"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Star daccotta-org/daccotta on GitHub"
+          >
+            Star
+          </a>
         </div>
       </div>
       <div className="text-xs text-gray-400 text-center mt-4">

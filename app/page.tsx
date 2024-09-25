@@ -5,15 +5,25 @@ import Footer from "@/components/custom/Footer";
 import Navbar from "@/components/custom/Navbar";
 import { OurTeam } from "@/components/custom/OurTeam";
 import { cn } from "@/lib/utils";
+import { Inter, Lato } from "next/font/google";
+
+const inter = Inter({
+  weight: "700",
+  subsets: ["latin"],
+});
+const interBody = Inter({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export default function Home() {
   return (
     <>
-      <header>
+      <header className={interBody.className}>
         <Navbar />
       </header>
 
-      <main className="">
+      <main className={interBody.className}>
         <BeamDesignBg />
 
         <AboutDaccotta />
@@ -22,7 +32,7 @@ export default function Home() {
         {/* <OurTeam/> */}
       </main>
 
-      <footer>
+      <footer className={interBody.className}>
         <Footer />
       </footer>
     </>
