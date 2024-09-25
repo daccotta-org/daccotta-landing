@@ -61,12 +61,19 @@ export const WavyBackground = ({
     render();
   };
 
+  // const waveColors = colors ?? [
+  //   "#38bdf8",
+  //   "#818cf8",
+  //   "#c084fc",
+  //   "#e879f9",
+  //   "#22d3ee",
+  // ];
   const waveColors = colors ?? [
-    "#38bdf8",
-    "#818cf8",
-    "#c084fc",
-    "#e879f9",
-    "#22d3ee",
+    "#ff6b6b", // Soft red
+    "#4d7cff", // Bright blue
+    "#a367dc", // Purple
+    "#ff4757", // Vibrant red
+    "#5352ed", // Deep blue
   ];
   const drawWave = (n: number) => {
     nt += getSpeed();
@@ -112,7 +119,7 @@ export const WavyBackground = ({
   return (
     <div
       className={cn(
-        "h-screen flex flex-col items-center justify-center",
+        "h-screen flex flex-col w-screen items-center justify-center",
         containerClassName
       )}
     >

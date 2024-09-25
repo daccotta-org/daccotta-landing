@@ -1,13 +1,12 @@
 import Image from "next/image";
 import journal from "../../assets/Features/journal.png";
 import listcreation from "../../assets/Features/List_creation.png";
-import profile from "../../assets/Features/profile.png";
+import profile from "../../assets/Features/stats-bento.png";
 import reccomend from "../../assets/Features/reccomend.png";
-import topmovies from "../../assets/Features/top-movies.png";
+import topmovies from "../../assets/Features/top5.png";
 
 import React from "react";
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
-
 
 export function FeaturesBento() {
   return (
@@ -31,67 +30,32 @@ const items = [
   {
     title: "List Creation",
     description: "Create and manage your own movie lists.",
-    header: (
-      <Image
-        src={listcreation}
-        alt=""
-        className=""
-      />
-    ),
+    header: <Image src={listcreation} alt="" className="" />,
   },
-
 
   {
     title: "Movie Journals",
     description: "Keep a personalized journal entry for every movie you watch.",
-    header: (
-        <Image
-          src={journal}
-          alt=""
-          className=""
-        />
-      ),
+    header: <Image src={journal} alt="" className="" />,
   },
-
 
   {
     title: "User Stats",
     description: "Get insights into your movie-watching habits.",
-    header: (
-        <Image
-          src={profile}
-          alt=""
-          className=""
-        />
-      ),
+    header: <Image src={profile} alt="" className="" />,
   },
-
 
   {
     title: "Your Favorites, Your Way",
     description:
       "Effortlessly curate and showcase your top movie picks in a sleek, customizable list that reflects your taste.",
-    header: (
-        <Image
-          src={topmovies}
-          alt=""
-          className="w-max"
-        />
-      ),
+    header: <Image src={topmovies} alt="" className="w-max" />,
   },
-
 
   {
     title: "Personalized reccomendations",
-    description: "Get personalized reccomendations based on your movie watching habits.",
-    header: (
-        <Image
-          src={reccomend}
-          alt=""
-          className=""
-        />
-      ),
+    description:
+      "Get personalized reccomendations based on your movie watching habits.",
+    header: <Image src={reccomend} alt="" className="" />,
   },
-
-
 ];
