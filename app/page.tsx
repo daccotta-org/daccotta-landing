@@ -17,7 +17,7 @@ export default function Home() {
       <BeamDesignBg />
       <AboutDaccotta/>
       <Features/>
-      <OurTeam/>
+      {/* <OurTeam/> */}
     </main>
 
     <footer>
