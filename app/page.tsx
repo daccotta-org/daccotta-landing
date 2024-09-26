@@ -25,7 +25,6 @@ export default function Home() {
 
       <main className={interBody.className}>
         <BeamDesignBg />
-
         <AboutDaccotta />
         <Features />
 
