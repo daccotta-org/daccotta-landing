@@ -32,7 +32,7 @@ export function BeamDesignBg() {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <a href="https://daccotta.com" target="_blank">
+              <a href="https://app.daccotta.com/signin" target="_blank">
                 <button className="p-[3px] relative flex-grow md:flex-grow-0">
                   <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
                   <div className="px-6 md:px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent w-full text-center">
@@ -41,7 +41,7 @@ export function BeamDesignBg() {
                 </button>
               </a>
 
-              <a href="https://daccotta.com" target="_blank">
+              <a href="https://app.daccotta.com/signup" target="_blank">
                 <button className="p-[3px] relative flex-grow md:flex-grow-0">
                   <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
                   <div className="px-6 md:px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent w-full text-center">
