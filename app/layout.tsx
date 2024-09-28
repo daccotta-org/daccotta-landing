@@ -56,6 +56,10 @@ export default function RootLayout({
       <head>
         <title>Daccotta | The Social Network For Movie Lovers</title>
         <link rel="shortcut icon" href={favicon.src} type="image/x-icon" />
+        <meta
+          name="google-site-verification"
+          content="B6tdC5ZJRoLJdb9oJ_YP85QgqByEx1Wc4cwfCrNPY08"
+        />
       </head>
       <body>{children}</body>
     </html>
