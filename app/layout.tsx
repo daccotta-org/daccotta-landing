@@ -9,7 +9,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
-        <title>Daccotta</title>
+        <title>Daccotta | The Social Network For Movies</title>
         <link rel="shortcut icon" href={favicon.src} type="image/x-icon" />
       </head>
       <body>{children}</body>

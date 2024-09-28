@@ -19,8 +19,8 @@ export function BeamDesignBg() {
 
   const Content = () => (
     <WavyBackground>
-      <div className="container mx-auto px-4 py-8 md:my-24 my-0">
-        <div className="flex flex-col md:flex-row gap-8 items-center justify-center">
+      <div className="container mx-auto px-4 py-8 md:my-24 my-0 ">
+        <div className="flex flex-col md:flex-row gap-8 items-center justify-start md:justify-center">
           {/* Left Column */}
           <div className="w-full md:w-1/2 flex flex-col justify-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-purple-300 text-left mb-4">
@@ -65,7 +65,7 @@ export function BeamDesignBg() {
     // <BackgroundBeamsWithCollision>
     //   <Content />
     // </BackgroundBeamsWithCollision>
-    <div className="container bg-gradient-to-b flex  justify-center items-center">
+    <div className="container bg-gradient-to-b flex justify-start  md:justify-center items-center top-0">
       <Content />
     </div>
   );
