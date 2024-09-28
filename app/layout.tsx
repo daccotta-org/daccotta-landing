@@ -14,13 +14,12 @@ export const metadata: Metadata = {
     description:
       "Connect with movie lovers, create lists, and journal your film experiences.",
     url: "https://www.daccotta.com", // Replace with your actual URL
-    siteName: "Daccotta",
+    siteName: "daccotta",
+
     images: [
       {
         url: "/dacotta-social.png", // Path relative to the 'public' folder
-        width: 1200,
-        height: 400,
-        alt: "Daccotta - The Social Network For Movie Lovers",
+        alt: "daccotta - The Social Network For Movie Lovers",
       },
     ],
     locale: "en_US",
@@ -60,6 +59,11 @@ export default function RootLayout({
           name="google-site-verification"
           content="B6tdC5ZJRoLJdb9oJ_YP85QgqByEx1Wc4cwfCrNPY08"
         />
+        <meta
+          name="image"
+          property="og:image"
+          content="/daccotta-social.png"
+        ></meta>
       </head>
       <body>{children}</body>
     </html>
