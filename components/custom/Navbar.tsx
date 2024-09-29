@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react"
 import Image from "next/image"
 import logo from "../../assets/logo.jpg"
 import { GitStarBtn } from "./starbtn"
+import github from "../../assets/Footer-icons/github.png";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -82,7 +83,6 @@ const Navbar: React.FC = () => {
           <a href="#footer-contact" className="text-white hover:text-gray-300 transition duration-200">
             Contact
           </a>
-          <div>
              <a
             className="github-button"
             href="https://github.com/daccotta-org/daccotta"
@@ -93,7 +93,6 @@ const Navbar: React.FC = () => {
           >
             Star
           </a>
-          </div>
         </div>
       </div>
       {isMenuOpen && (
