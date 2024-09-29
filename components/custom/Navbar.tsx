@@ -82,7 +82,8 @@ const Navbar: React.FC = () => {
           <a href="#footer-contact" className="text-white hover:text-gray-300 transition duration-200">
             Contact
           </a>
-          <a
+          <div>
+             <a
             className="github-button"
             href="https://github.com/daccotta-org/daccotta"
             data-icon="octicon-star"
@@ -92,6 +93,7 @@ const Navbar: React.FC = () => {
           >
             Star
           </a>
+          </div>
         </div>
       </div>
       {isMenuOpen && (
