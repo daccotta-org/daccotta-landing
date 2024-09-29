@@ -72,9 +72,7 @@ const Navbar: React.FC = () => {
           </button>
         </div>
         <div className="hidden md:flex md:space-x-4 text-base lg:text-lg">
-        <a href="https://github.com/daccotta-org/daccotta" target="_blank" className="mx-1 lg:mx-2">
-            <GitStarBtn/>
-          </a>
+        
           <a href="#about" className="text-white hover:text-gray-300 transition duration-200">
             About
           </a>
@@ -83,6 +81,16 @@ const Navbar: React.FC = () => {
           </a>
           <a href="#footer-contact" className="text-white hover:text-gray-300 transition duration-200">
             Contact
+          </a>
+          <a
+            className="github-button"
+            href="https://github.com/daccotta-org/daccotta"
+            data-icon="octicon-star"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Star daccotta-org/daccotta on GitHub"
+          >
+            Star
           </a>
         </div>
       </div>
