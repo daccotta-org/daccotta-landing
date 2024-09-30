@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "/dacotta-social.png", // Path relative to the 'public' folder
+        url: "/dacotta-banner.png", // Path relative to the 'public' folder
         alt: "daccotta - The Social Network For Movie Lovers",
       },
     ],
@@ -32,14 +32,14 @@ export const metadata: Metadata = {
     title: "Daccotta | The Social Network For Movies",
     description:
       "Discover, share, and connect through your love of cinema. Create lists, journal entries, and get personalized movie recommendations.",
-    images: ["/dacotta-social.png"], // Path relative to the 'public' folder
+    images: ["/dacotta-banner.png"], // Path relative to the 'public' folder
   },
   other: {
     "linkedin:card": "summary_large_image",
     "linkedin:title": "Daccotta | Connect Through Cinema",
     "linkedin:description":
       "Join Daccotta to create movie lists, journal your film experiences, and get personalized recommendations. The ultimate social network for movie enthusiasts.",
-    "linkedin:image": "/dacotta-social.png",
+    "linkedin:image": "/dacotta-banner.png",
   },
   icons: {
     icon: "/favicon.ico",
@@ -62,7 +62,7 @@ export default function RootLayout({
         <meta
           name="image"
           property="og:image"
-          content="/daccotta-social.png"
+          content="/daccotta-banner.png"
         ></meta>
       </head>
       <body>{children}</body>
