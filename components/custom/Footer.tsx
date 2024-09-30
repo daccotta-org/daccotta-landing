@@ -79,18 +79,24 @@ const Footer = () => {
             </Link>
           ))}
         </div>
-        {/* <div className="mt-2">
-          <a
-            className="github-button"
-            href="https://github.com/daccotta-org/daccotta"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star daccotta-org/daccotta on GitHub"
-          >
-            Star
-          </a>
-        </div> */}
+        {/* <a
+          className="github-button"
+          href="https://github.com/daccotta-org/daccotta"
+          data-icon="octicon-star"
+          data-size="large"
+          data-show-count="true"
+          aria-label="Star daccotta-org/daccotta on GitHub"
+        >
+          Star
+        </a> */}
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=daccotta-org&repo=daccotta&type=star&count=true&size=large"
+          frameBorder="0"
+          scrolling="0"
+          width="170"
+          height="30"
+          title="GitHub"
+        ></iframe>
       </div>
       <div className="text-xs text-gray-400 text-center mt-4">
         <p>

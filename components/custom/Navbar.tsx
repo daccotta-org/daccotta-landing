@@ -1,35 +1,36 @@
-"use client"
+"use client";
 
-import React, { useState, useEffect } from "react"
-import Image from "next/image"
-import logo from "../../assets/logo.jpg"
-import { GitStarBtn } from "./starbtn"
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import logo from "../../assets/logo.jpg";
+import { GitStarBtn } from "./starbtn";
 import github from "../../assets/Footer-icons/github.png";
+import { IconBrandGithub } from "@tabler/icons-react";
 
 const Navbar: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   const handleLinkClick = () => {
     if (isMenuOpen) {
-      setIsMenuOpen(false)
+      setIsMenuOpen(false);
     }
-  }
+  };
 
   useEffect(() => {
     if (isMenuOpen) {
-      document.body.style.overflow = 'hidden'
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'unset'
+      document.body.style.overflow = "unset";
     }
 
     return () => {
-      document.body.style.overflow = 'unset'
-    }
-  }, [isMenuOpen])
+      document.body.style.overflow = "unset";
+    };
+  }, [isMenuOpen]);
 
   return (
     <nav className="relative z-50">
@@ -73,48 +74,72 @@ const Navbar: React.FC = () => {
           </button>
         </div>
         <div className="hidden md:flex md:space-x-4 text-base lg:text-lg">
-        
-          <a href="#about" className="text-white hover:text-gray-300 transition duration-200">
+          <a
+            href="#about"
+            className="text-white hover:text-gray-300 transition duration-200"
+          >
             About
           </a>
-          <a href="#features" className="text-white hover:text-gray-300 transition duration-200">
+          <a
+            href="#features"
+            className="text-white hover:text-gray-300 transition duration-200"
+          >
             Features
           </a>
-          <a href="#footer-contact" className="text-white hover:text-gray-300 transition duration-200">
+          <a
+            href="#footer-contact"
+            className="text-white hover:text-gray-300 transition duration-200"
+          >
             Contact
           </a>
-             <a
-            className="github-button"
-            href="https://github.com/daccotta-org/daccotta"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star daccotta-org/daccotta on GitHub"
-          >
-            Star
-          </a>
+          <iframe
+            src="https://ghbtns.com/github-btn.html?user=daccotta-org&repo=daccotta&type=star&count=false&size=large"
+            frameBorder="0"
+            scrolling="0"
+            width="70"
+            height="30"
+            title="Github"
+            className="github-button ml-2"
+          ></iframe>
         </div>
       </div>
       {isMenuOpen && (
         <div className="fixed inset-x-0 top-[60px] bottom-0  backdrop-blur-md bg-opacity-40 z-40 flex items-center justify-center md:hidden">
           <div className="flex flex-col items-center space-y-8">
-            <a href="#about" onClick={handleLinkClick} className="text-white text-2xl hover:text-gray-300 transition duration-200">
+            <a
+              href="#about"
+              onClick={handleLinkClick}
+              className="text-white text-2xl hover:text-gray-300 transition duration-200"
+            >
               About
             </a>
-            <a href="#features" onClick={handleLinkClick} className="text-white text-2xl hover:text-gray-300 transition duration-200">
+            <a
+              href="#features"
+              onClick={handleLinkClick}
+              className="text-white text-2xl hover:text-gray-300 transition duration-200"
+            >
               Features
             </a>
-            <a href="#footer-contact" onClick={handleLinkClick} className="text-white text-2xl hover:text-gray-300 transition duration-200">
+            <a
+              href="#footer-contact"
+              onClick={handleLinkClick}
+              className="text-white text-2xl hover:text-gray-300 transition duration-200"
+            >
               Contact
             </a>
-            <a href="https://github.com/daccotta-org/daccotta" target="_blank" onClick={handleLinkClick} className="text-white text-2xl hover:text-gray-300 transition duration-200">
-              Star GitHub
+            <a
+              href="https://github.com/daccotta-org/daccotta"
+              target="_blank"
+              onClick={handleLinkClick}
+              className="text-white text-2xl hover:text-gray-300 transition duration-200"
+            >
+              <p className="text-[#FF204E]">Github</p>
             </a>
           </div>
         </div>
       )}
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

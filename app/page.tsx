@@ -18,7 +18,7 @@ const interBody = Inter({
 
 export default function Home() {
   return (
-    <>
+    <main>
       <header className={interBody.className}>
         <Navbar />
       </header>
@@ -34,6 +34,6 @@ export default function Home() {
       <footer className={interBody.className}>
         <Footer />
       </footer>
-    </>
+    </main>
   );
 }
