@@ -87,7 +87,7 @@ const Navbar: React.FC = () => {
             Features
           </a>
           <a
-            href="#footer-contact"
+            href="#contact"
             className="text-white hover:text-gray-300 transition duration-200"
           >
             Contact
